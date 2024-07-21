@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="client_gui.OrderConfirmationPickUpController"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="common.Transaction"/>
+    <fullyQualifiedTypeName name="common.Action"/>
+    <fullyQualifiedTypeName name="logic.User"/>
+    <fullyQualifiedTypeName name="enums.RoleEnum"/>
+    <fullyQualifiedTypeName name="enums.StatusEnum"/>
+    <fullyQualifiedTypeName name="enums.RegionEnum"/>
+    <fullyQualifiedTypeName name="java.sql.ResultSet"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java.sql.SQLException"/>
+    <fullyQualifiedTypeName name="javafx.scene.control.TextField"/>
+    <fullyQualifiedTypeName name="javafx.scene.control.PasswordField"/>
+    <fullyQualifiedTypeName name="javafx.scene.control.Label"/>
+    <fullyQualifiedTypeName name="org.mockito.asm.Label"/>
+    <fullyQualifiedTypeName name="client_gui.LoginController"/>
+    <fullyQualifiedTypeName name="org.mockito.ArgumentCaptor"/>
+    <fullyQualifiedTypeName name="javafx.collections.ObservableList"/>
+    <fullyQualifiedTypeName name="javafx.event.ActionEvent"/>
+    <fullyQualifiedTypeName name="client.ChatClient"/>
+    <fullyQualifiedTypeName name="client.ClientController"/>
+    <fullyQualifiedTypeName name="clientInterfaces.IFxml"/>
+    <fullyQualifiedTypeName name="clientInterfaces.IClientController"/>
+    <fullyQualifiedTypeName name="org.junit.Test"/>
+    <fullyQualifiedTypeName name="common.Response"/>
+</qualifiedTypeNameHistroy>

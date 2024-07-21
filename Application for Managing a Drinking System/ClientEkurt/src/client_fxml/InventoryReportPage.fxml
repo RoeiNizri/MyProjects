@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="534.0" prefWidth="947.0" style="-fx-background-color: #EEF6FD;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client_gui.InvenrtoryReportsPageFxmlController">
+      <ImageView fitHeight="210.0" fitWidth="157.0" layoutX="25.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../client_images/EKURT.png" />
+         </image>
+      </ImageView>
+   <TableView fx:id="productsTable" layoutX="195.0" layoutY="112.0" prefHeight="395.0" prefWidth="535.0" stylesheets="@../client_css/table&amp;buttonDesign.css">
+     <columns>
+       <TableColumn fx:id="productIdCol" prefWidth="99.0" text="Product ID" />
+         <TableColumn fx:id="productNameCol" prefWidth="111.0" text="Product Name" />
+         <TableColumn fx:id="priceCol" prefWidth="93.0" text="Price" />
+         <TableColumn fx:id="quantityStatusCol" prefWidth="113.0" text="Quantity Status" />
+         <TableColumn fx:id="quantityCol" prefWidth="118.0" text="Quantity" />
+     </columns>
+   </TableView>
+   <Label alignment="CENTER" layoutX="363.0" layoutY="40.0" prefHeight="35.0" prefWidth="219.0" text="Inventory Report" textAlignment="CENTER" textFill="#0e5772">
+      <font>
+         <Font name="Calibri Bold" size="30.0" />
+      </font>
+   </Label>
+   <Label layoutX="200.0" layoutY="83.0" text="Products" textFill="#0e5772">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Label>
+   <ComboBox fx:id="machineComboBox" layoutX="749.0" layoutY="159.0" prefHeight="30.0" prefWidth="173.0" promptText="Choose Machine..." stylesheets="@../client_css/ComboBoxDesign.css" />
+   <Button fx:id="showReportBtn" layoutX="760.0" layoutY="212.0" mnemonicParsing="false" onAction="#viewInventoryReport" prefHeight="35.0" prefWidth="150.0" style="-fx-background-color: #0E5772;" stylesheets="@../client_css/table&amp;buttonDesign.css" text="Show Report" textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font>
+   </Button>
+   <Label fx:id="errorLabel" layoutX="32.0" layoutY="323.0" text="errorLabel" textFill="RED" />
+   <ImageView fitHeight="85.0" fitWidth="88.0" layoutX="591.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../client_images/imageedit_2_2018645905.png" />
+      </image>
+   </ImageView>
+   <Button fx:id="UpdateProductLimitBtn" layoutX="760.0" layoutY="332.0" mnemonicParsing="false" onAction="#UpdateProductLimit" prefHeight="35.0" prefWidth="163.0" style="-fx-background-color: #0E5772;" stylesheets="@../client_css/table&amp;buttonDesign.css" text="Update Limit" textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font>
+   </Button>
+   <Label layoutX="749.0" layoutY="281.0" text="Limit" textFill="#0e5772">
+      <font>
+         <Font name="System Bold" size="18.0" />
+      </font>
+   </Label>
+   <TextField fx:id="limitTxt" layoutX="798.0" layoutY="282.0" prefHeight="26.0" prefWidth="130.0" promptText="Enter Inventory limit" />
+   <Button fx:id="updateStatusBtn" layoutX="760.0" layoutY="380.0" mnemonicParsing="false" onAction="#updateQuantityStatus" prefHeight="35.0" prefWidth="163.0" style="-fx-background-color: #0E5772;" stylesheets="@../client_css/table&amp;buttonDesign.css" text="Request Refill" textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font>
+   </Button>
+   <ImageView fx:id="backBtn" fitHeight="29.0" fitWidth="36.0" layoutX="14.0" layoutY="15.0" onMouseClicked="#clickOnBackButton" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../client_images/BackLogo.png" />
+      </image>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </ImageView>
+   <Button fx:id="exportReportBtn" layoutX="760.0" layoutY="427.0" mnemonicParsing="false" onAction="#exportReportToXsl" prefHeight="35.0" prefWidth="163.0" style="-fx-background-color: #0E5772;" stylesheets="@../client_css/table&amp;buttonDesign.css" text="Export Report" textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font>
+   </Button>
+</AnchorPane>

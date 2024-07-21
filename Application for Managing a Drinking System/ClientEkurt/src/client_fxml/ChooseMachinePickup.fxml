@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="362.0" prefWidth="435.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client_gui.ChooseMachinePickupController">
+   <children>
+      <AnchorPane prefHeight="405.0" prefWidth="516.0" style="-fx-background-color: #EEF6FD;">
+         <children>
+            <Label alignment="CENTER" layoutX="153.0" layoutY="176.0" prefHeight="35.0" prefWidth="209.0" text="Choose machine" textAlignment="CENTER" textFill="#0e5772">
+               <font>
+                  <Font name="Calibri Bold" size="30.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="115.0" fitWidth="85.0" layoutX="216.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../client_images/EKURT.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="continueBtn" layoutX="182.0" layoutY="299.0" mnemonicParsing="false" onAction="#clickOnContinue" prefHeight="44.0" prefWidth="152.0" style="-fx-background-color: #0E5772;" stylesheets="@../client_css/table&amp;buttonDesign.css" text="Continue" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <ComboBox fx:id="chooseMachine" layoutX="157.0" layoutY="217.0" prefHeight="29.0" prefWidth="202.0" promptText="Choose machine..." stylesheets="@../client_css/ComboBoxDesign.css" />
+            <ImageView fx:id="backBtn" fitHeight="29.0" fitWidth="36.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#clickOnBackButton" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../client_images/BackLogo.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

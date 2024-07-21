@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="77.0" prefWidth="263.0" style="-fx-border-color: #E89390; -fx-border-radius: 5; -fx-border-width: 3;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client_gui.ProductInCartController">
+   <children>
+      <VBox prefHeight="71.0" prefWidth="203.0">
+         <children>
+            <Label fx:id="productName" prefHeight="36.0" prefWidth="182.0" textFill="#0e5772">
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="productPrice" prefHeight="20.0" prefWidth="200.0" textFill="#0e5772">
+               <padding>
+                  <Insets left="15.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="productsQuantity" prefHeight="20.0" prefWidth="200.0" textFill="#0e5772">
+               <padding>
+                  <Insets left="15.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets right="5.0" />
+         </padding>
+      </VBox>
+      <VBox prefHeight="71.0" prefWidth="159.0">
+         <children>
+            <Pane prefHeight="71.0" prefWidth="114.0">
+               <children>
+                  <Label fx:id="finalPrice" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutY="22.0" prefHeight="27.0" prefWidth="73.0" textAlignment="RIGHT" textFill="#0e5772">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets right="5.0" />
+                     </padding>
+                  </Label>
+                  <ImageView fx:id="removeProductBtn" fitHeight="31.0" fitWidth="24.0" layoutX="82.0" layoutY="24.0" onMouseClicked="#clickOnTrashbin" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../client_images/trash.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+   </children>
+</HBox>

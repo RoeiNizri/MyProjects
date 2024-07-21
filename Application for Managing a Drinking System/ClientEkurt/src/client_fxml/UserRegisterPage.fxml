@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="501.0" prefWidth="514.0" style="-fx-background-color: #EEF6FD;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client_gui.UserRegisterController">
+   <children>
+      <ImageView fitHeight="115.0" fitWidth="85.0" layoutX="225.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../client_images/EKURT.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="registerBtn" layoutX="201.0" layoutY="417.0" mnemonicParsing="false" onAction="#registerUserToCustomer" prefHeight="44.0" prefWidth="131.0" style="-fx-background-color: #0E5772;" stylesheets="@../client_css/table&amp;buttonDesign.css" text="Register" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutX="71.0" layoutY="316.0" prefHeight="35.0" prefWidth="94.0" text="Credit Card" textAlignment="CENTER" textFill="#0e5772">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="creditCardTxt" layoutX="175.0" layoutY="321.0" prefHeight="25.0" prefWidth="264.0" />
+      <TextField fx:id="cvvTxt" layoutX="337.0" layoutY="356.0" prefHeight="25.0" prefWidth="101.0" />
+      <Label alignment="CENTER" layoutX="290.0" layoutY="351.0" prefHeight="35.0" prefWidth="42.0" text="CVV" textAlignment="CENTER" textFill="#0e5772">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="expMonthTxt" layoutX="175.0" layoutY="356.0" prefHeight="26.0" prefWidth="54.0" promptText="Month" />
+      <Label alignment="CENTER" layoutX="80.0" layoutY="351.0" prefHeight="35.0" prefWidth="77.0" text="Exp Date" textAlignment="CENTER" textFill="#0e5772">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="217.0" layoutY="351.0" prefHeight="35.0" prefWidth="42.0" text="/" textAlignment="CENTER" textFill="#0e5772">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="expYearTxt" layoutX="246.0" layoutY="356.0" prefHeight="25.0" prefWidth="42.0" promptText="Year" />
+      <Label alignment="CENTER" layoutX="88.0" layoutY="248.0" prefHeight="35.0" prefWidth="59.0" text="E-mail" textAlignment="CENTER" textFill="#0e5772">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="emailTxt" editable="false" layoutX="175.0" layoutY="253.0" prefHeight="25.0" prefWidth="264.0" />
+      <Label alignment="CENTER" layoutX="70.0" layoutY="213.0" prefHeight="35.0" prefWidth="94.0" text="Id number" textAlignment="CENTER" textFill="#0e5772">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="phoneTxt" editable="false" layoutX="175.0" layoutY="286.0" prefHeight="25.0" prefWidth="264.0" />
+      <Label alignment="CENTER" layoutX="70.0" layoutY="148.0" prefHeight="35.0" prefWidth="94.0" text="First Name" textAlignment="CENTER" textFill="#0e5772">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="70.0" layoutY="181.0" prefHeight="35.0" prefWidth="94.0" text="Last Name" textAlignment="CENTER" textFill="#0e5772">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="70.0" layoutY="281.0" prefHeight="35.0" prefWidth="94.0" text="Phone" textAlignment="CENTER" textFill="#0e5772">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="idNumberTxt" editable="false" layoutX="175.0" layoutY="218.0" prefHeight="25.0" prefWidth="264.0" />
+      <TextField fx:id="lastNameTxt" editable="false" layoutX="175.0" layoutY="186.0" prefHeight="25.0" prefWidth="264.0" />
+      <TextField fx:id="firstNameTxt" editable="false" layoutX="175.0" layoutY="155.0" prefHeight="25.0" prefWidth="264.0" />
+      <Label fx:id="errorLabel" layoutX="32.0" layoutY="408.0" text="errorLabel" textFill="RED" />
+      <ImageView fx:id="backBtn" fitHeight="29.0" fitWidth="36.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#clickOnBackButton" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../client_images/BackLogo.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>

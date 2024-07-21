@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="332.0" prefWidth="445.0" style="-fx-background-color: #EEF6FD;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client_gui.PickUpCompletedController">
+   <children>
+      <ImageView fitHeight="195.0" fitWidth="198.0" layoutX="122.0" layoutY="-9.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../client_images/delivery.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="29.0" layoutY="168.0" prefHeight="35.0" prefWidth="388.0" text="Thank you for your purchase!" textAlignment="CENTER" textFill="#0e5772">
+         <font>
+            <Font name="Calibri Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="75.0" layoutY="211.0" prefHeight="35.0" prefWidth="296.0" text="we will love to see you again soon" textAlignment="CENTER" textFill="#0e5772">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="close" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" layoutX="197.0" layoutY="263.0" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#clickOnClose" prefHeight="50.0" prefWidth="92.0" style="-fx-background-color: #ea6161; -fx-background-radius: 100; -fx-pref-width: 50; -fx-padding: 1;" text="X" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+   </children>
+</AnchorPane>

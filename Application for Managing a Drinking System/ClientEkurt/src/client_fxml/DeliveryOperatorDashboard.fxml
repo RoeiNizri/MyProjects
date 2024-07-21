@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="405.0" prefWidth="516.0" style="-fx-background-color: #EEF6FD;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client_gui.DeliveryOperatorDashboardController">
+   <children>
+      <Label fx:id="lbl" alignment="CENTER" layoutX="93.0" layoutY="151.0" prefHeight="103.0" prefWidth="345.0" textAlignment="CENTER" textFill="#0e5772" wrapText="true">
+         <font>
+            <Font name="Calibri Bold" size="30.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="115.0" fitWidth="85.0" layoutX="216.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../client_images/EKURT.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="ManagerOrdersBtn" layoutX="140.0" layoutY="274.0" mnemonicParsing="false" onAction="#ManagerOrders" prefHeight="44.0" prefWidth="236.0" style="-fx-background-color: #0E5772;" stylesheets="@../client_css/table&amp;buttonDesign.css" text="Manage Orders" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="LogoutBtn" layoutX="22.0" layoutY="346.0" mnemonicParsing="false" onAction="#logout" prefHeight="35.0" prefWidth="90.0" style="-fx-background-color: #0E5772;" stylesheets="@../client_css/table&amp;buttonDesign.css" text="Logout" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

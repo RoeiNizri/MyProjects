@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="606.0" prefWidth="1090.0" style="-fx-background-color: #EEF6FD;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client_gui.SubscriberApprovingController">
+      <ImageView fitHeight="255.0" fitWidth="222.0" layoutX="37.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../client_images/EKURT.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="requestSubscriberToRegisterTbl" layoutX="260.0" layoutY="54.0" prefHeight="459.0" prefWidth="798.0" style="-fx-background-color: #FFE3E2;" stylesheets="@../client_css/table&amp;buttonDesign.css">
+         <columns>
+            <TableColumn fx:id="idCol" prefWidth="90.0" text="ID" />
+            <TableColumn fx:id="nameCol" prefWidth="118.0" text="First Name" />
+            <TableColumn fx:id="lastNameCol" prefWidth="128.0" text="Last Name" />
+            <TableColumn fx:id="phoneCol" prefWidth="151.0" text="Phone" />
+            <TableColumn fx:id="emailCol" prefWidth="169.0" text="Email" />
+            <TableColumn fx:id="regionCol" prefWidth="141.0" text="Region" />
+         </columns>
+      </TableView>
+      <Button fx:id="approveRequestBtn" layoutX="545.0" layoutY="540.0" mnemonicParsing="false" onAction="#approveRequest" prefHeight="35.0" prefWidth="150.0" style="-fx-background-color: #0E5772;" stylesheets="@../client_css/table&amp;buttonDesign.css" text="Approve Request" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   <Label fx:id="errorLabel" layoutX="35.0" layoutY="359.0" text="errorLabel" textFill="RED" />
+   <ImageView fx:id="backBtn" fitHeight="35.0" fitWidth="42.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#clickOnBackButton" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../client_images/BackLogo.png" />
+      </image>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </ImageView>
+</AnchorPane>

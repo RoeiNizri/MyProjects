@@ -1,0 +1,11 @@
+The kitchen was created!
+4 Pasta were added to the kitchen.
+There isn't Falafel in the menu
+4 Pasta were ordered to table number 5
+1 Pasta were returned to the kitchen from table 5
+There aren't orders to table 1
+Table 5 ordered: 3 Pasta.
+Thank you, wish you enjoy with us.
+ Price: 90¤
+ Tip(10%): 9¤
+ Total price: 99¤

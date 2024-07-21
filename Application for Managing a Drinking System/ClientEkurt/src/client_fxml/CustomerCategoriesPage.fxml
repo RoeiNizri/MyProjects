@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="362.0" prefWidth="435.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client_gui.CustomerCategoriesController">
+   <children>
+      <AnchorPane prefHeight="454.0" prefWidth="708.0" style="-fx-background-color: #EEF6FD;">
+         <children>
+            <Label alignment="CENTER" layoutX="212.0" layoutY="194.0" prefHeight="35.0" prefWidth="284.0" text="Categories" textAlignment="CENTER" textFill="#0e5772">
+               <font>
+                  <Font name="Calibri Bold" size="30.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="138.0" fitWidth="88.0" layoutX="310.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../client_images/EKURT.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="cartBtn" fitHeight="35.0" fitWidth="52.0" layoutX="63.0" layoutY="22.0" onMouseClicked="#clickOnViewCart" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../client_images/CartLogo.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="backBtn" fitHeight="29.0" fitWidth="36.0" layoutX="19.0" layoutY="25.0" onMouseClicked="#clickOnBackButton" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../client_images/BackLogo.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="drinksCategory" fitHeight="143.0" fitWidth="104.0" layoutX="116.0" layoutY="245.0" onMouseClicked="#clickOnDrinksCategory" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../client_images/drinkCategory.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="124.0" layoutY="387.0" prefHeight="35.0" prefWidth="88.0" text="Drinks" textAlignment="CENTER" textFill="#0e5772">
+               <font>
+                  <Font name="Calibri Bold" size="25.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="sweetsCategory" fitHeight="143.0" fitWidth="104.0" layoutX="240.0" layoutY="245.0" onMouseClicked="#clickOnSweetsCategory" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../client_images/SweetsCategory.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="248.0" layoutY="387.0" prefHeight="35.0" prefWidth="88.0" text="Sweets" textAlignment="CENTER" textFill="#0e5772">
+               <font>
+                  <Font name="Calibri Bold" size="25.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="snackCategory" fitHeight="143.0" fitWidth="104.0" layoutX="364.0" layoutY="245.0" onMouseClicked="#clickOnSnackCategory" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../client_images/SnackCategory.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="372.0" layoutY="387.0" prefHeight="35.0" prefWidth="88.0" text="Snacks" textAlignment="CENTER" textFill="#0e5772">
+               <font>
+                  <Font name="Calibri Bold" size="25.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="foodCategory" fitHeight="143.0" fitWidth="104.0" layoutX="489.0" layoutY="245.0" onMouseClicked="#clickOnFoodCategory" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../client_images/FoodCategory.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Label fx:id="machineName" alignment="CENTER" layoutX="112.0" layoutY="147.0" prefHeight="35.0" prefWidth="484.0" textAlignment="CENTER" textFill="#0e5772">
+               <font>
+                  <Font name="Calibri Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="497.0" layoutY="387.0" prefHeight="35.0" prefWidth="88.0" text="Food" textAlignment="CENTER" textFill="#0e5772">
+               <font>
+                  <Font name="Calibri Bold" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
