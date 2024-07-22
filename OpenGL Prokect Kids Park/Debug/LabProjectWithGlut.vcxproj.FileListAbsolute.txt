@@ -1,0 +1,4 @@
+C:\Users\roein\Desktop\הנדסת תוכנה\סמסטר ח\גרפיקה ממוחשבת\LabProjectWithGlut_VS2019\Debug\LabProjectWithGlut.exe
+C:\Users\roein\Desktop\הנדסת תוכנה\סמסטר ח\גרפיקה ממוחשבת\LabProjectWithGlut_VS2019\Debug\LabProjectWithGlut.pdb
+C:\Users\roein\Desktop\הנדסת תוכנה\סמסטר ח\גרפיקה ממוחשבת\Kids Park Project\Debug\LabProjectWithGlut.exe
+C:\Users\roein\Desktop\הנדסת תוכנה\סמסטר ח\גרפיקה ממוחשבת\Kids Park Project\Debug\LabProjectWithGlut.pdb
